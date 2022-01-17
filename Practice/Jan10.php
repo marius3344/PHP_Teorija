@@ -135,5 +135,7 @@ $avgAge = array_sum($people)/count($people);
         
         ?>
     </table>
+
+    <?php echo rand(1,19); ?>
 </body>
 </html>
