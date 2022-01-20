@@ -25,7 +25,7 @@
         <li>Ir GET ir POST turi kintamuosius $_GET ir $_POST</li>
         <li>GET masyvas perduodamas i URL</li>
         <li>POST masyvas perduodamas HTTP POST metodu</li>
-        <li>GET turi ribota kieki infomacijos, ka galime persiusti</li>
+        <li>GET turi ribota kieki infomacijos (2000 zenklu), ka galime persiusti</li>
     </ul>
 
     <p>GET metodu NIEKADA nesiunciame slaptazodziu</p>
