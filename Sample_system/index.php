@@ -9,7 +9,7 @@ if ($_GET) {
 }
 
 ?>
-
+<div class="container">
     <h2>Please fill registration form!</h2>
     <form action="scripts/register.php" method="POST">
         <div class="form-floating">
@@ -32,7 +32,7 @@ if ($_GET) {
         </div>
         <button type="submit" class="btn btn-lg btn-primary">Register</button>
     </form>
-
+</div>
 <?php include 'layout/footer.php' ?>
 
     

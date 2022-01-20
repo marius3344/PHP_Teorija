@@ -11,16 +11,24 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
 
-<body class="text-center container">
+<body>
 
     <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
         <div class="container">
-            <a href="#" class="navbar-brand">Sample System</a>
+            <a href="http://localhost/PHP_teorija/sample_system/" class="navbar-brand">Sample System</a>
         </div>
-        <div class="collapse navbar-collapse">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <!-- Menu items -->
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"></li>
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                   
+                </li>
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                <li class="nav-item">
+                    <a href="http://localhost/PHP_teorija/sample_system/views/file_upload.php" class="nav-link">File Upload Form</a>
+                </li>
             </ul>
 
             <!-- Authentication links -->
