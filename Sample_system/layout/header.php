@@ -9,23 +9,20 @@
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        
 </head>
 
 <body>
-
-    <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
-        <div class="container">
-            <a href="http://localhost/PHP_teorija/sample_system/" class="navbar-brand">Sample System</a>
-        </div>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+ 
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+    <div class="container">
+        <a href="http://localhost/PHP_teorija/sample_system/" class="navbar-brand">Sample System</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarItems" aria-controls="navbarItems" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarItems">
             <!-- Menu items -->
             <ul class="navbar-nav me-auto">
-                <li class="nav-item">
-                   
-                </li>
-                &nbsp;
-                &nbsp;
-                &nbsp;
                 <li class="nav-item">
                     <a href="http://localhost/PHP_teorija/sample_system/views/file_upload.php" class="nav-link">File Upload Form</a>
                 </li>
@@ -42,4 +39,8 @@
             </ul>
 
         </div>
+        </div>
     </nav>
+    
+
+    </script>
