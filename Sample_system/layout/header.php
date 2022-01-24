@@ -22,9 +22,19 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarItems">
             <!-- Menu items -->
-            <ul class="navbar-nav me-auto">
+            <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
                     <a href="http://localhost/PHP_teorija/sample_system/views/file_upload.php" class="nav-link">File Upload Form</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a href="http://localhost/PHP_teorija/sample_system/views/gallery_upload.php" class="nav-link">Gallery Upload</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a href="http://localhost/PHP_teorija/sample_system/views/gallery.php" class="nav-link">Gallery</a>
                 </li>
             </ul>
 
