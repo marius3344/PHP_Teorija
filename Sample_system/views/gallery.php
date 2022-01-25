@@ -2,7 +2,7 @@
 $title1=$title2=$title3=$title4=$color= "";
 
 if ($_SERVER['REQUEST_METHOD'] == "POST") {
-    if (!empty($_FILES['image1']) && !empty($_FILES['image2']) && !empty($_FILES['image3']) && !empty($_FILES['image4']) && !empty($_POST['imageTitle1']) && !empty($_POST['imageTitle2']) && !empty($_POST['imageTitle3']) && !empty($_POST['imageTitle4'])) {
+    if (!empty($_FILES['image1']['name']) && !empty($_FILES['image2']['name']) && !empty($_FILES['image3']['name']) && !empty($_FILES['image4']['name']) && !empty($_POST['imageTitle1']) && !empty($_POST['imageTitle2']) && !empty($_POST['imageTitle3']) && !empty($_POST['imageTitle4'])) {
         $counter = 1;
         //var_dump($_FILES);
         foreach ($_FILES as $image) {
