@@ -6,6 +6,16 @@ if($_POST){
     $miles = $_POST['miles'];
     $km = $_POST['km'];
     $nautMiles = $_POST['nautMiles'];
+    $counter = 0;
+    foreach($_POST as $input){
+        if($input>0){
+            $counter++;
+        }
+    }
+    if($counter>1){
+        $meters = $miles = $km = $nautMiles = 0;
+    }
+
     if((float)$meters>0){
         $miles = round(($meters * 0.000621371),4);
         $km = round(($meters * 0.001),4);

@@ -1,5 +1,6 @@
 <!-- <pre> -->
 <?php
+include '../layout/header.php';
 // var_dump($_POST);
 // echo "<br>";
 // var_dump($_FILES);
@@ -21,8 +22,8 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
             //patikrinam failo tima pvz paveiksleli ar ne
             //patikrinam failo dydi
             //patikrinam failo extension
-            $fileName = $_FILES['avatar']['name'];
-            $tempName = $_FILES['avatar']['tmp_name'];
+            $fileName = $_FILES['avatar']['name']; // cia yra tik pavadinimas
+            $tempName = $_FILES['avatar']['tmp_name']; //cia yra failo duomenys
             $uploadDir = $fileDir . "failas.jpg"; // c/pictures/mypicture/failas.jpg galima nurodyti kokiu pavadinimu ikelti faila
             if (!move_uploaded_file($tempName, $uploadDir)) {
                 echo "ERROR";
