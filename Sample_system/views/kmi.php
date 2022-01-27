@@ -8,7 +8,7 @@ $weight = $height = 0;
 if($_GET){
     $weight = $_GET['weight'];
     $height = $_GET['height'];
-    $result = (float)((int)$weight/((int)$height/100)**2);
+    $result = round((float)((int)$weight/((int)$height/100)**2),2);
     if($result<18.5 || $result>25){
         $color = "danger";
     } else {
@@ -30,12 +30,12 @@ if($_GET){
                     <h5 class="card-title">Calculate your KMI!</h5>
                     <form action="" method="GET">
                         <div class="input-group mb-3">
-                            <input type="number" class="form-control" name="weight">
                             <label class="input-group-text" for="weight">Weight, kg</label>
+                            <input type="number" class="form-control" name="weight">
                         </div>
                         <div class="input-group mb-3">
-                            <input type="number" class="form-control" name="height">
                             <label class="input-group-text" for="height">Height, cm</label>
+                            <input type="number" class="form-control" name="height">
                         </div>
                         <div class="input-group mb-3">
                             <button class="btn btn-primary" type="submit">Submit</button>
