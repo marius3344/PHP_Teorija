@@ -1,4 +1,10 @@
-<?php include '../layout/header.php';
+<?php 
+session_start();
+if(!isset($_SESSION['username'])){
+    header("Location: login.php");
+}
+include '../layout/header.php';
+
 $meters = $miles = $km = $nautMiles = 0;
 
 if($_POST){

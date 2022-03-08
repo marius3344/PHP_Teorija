@@ -1,4 +1,5 @@
 <?php
+
 require_once("../db_connection.php");
 
 //susirenkame login info is formos
@@ -19,10 +20,13 @@ try {
 }
 //pasitikriname ar yra toks email
 if ($result){
+    session_start();
     $dbPasswordHash = $result['password'];
     //tikriname slaptazodi
     if(password_verify($password, $dbPasswordHash)){
-        echo "Login successful";
+        $_SESSION['username'] = $result['first_name'];
+        //echo "Login successful";
+        header("Location: ../views/users.php");
     } else {
         echo "Password is incorrect";
     }

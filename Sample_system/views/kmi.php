@@ -1,4 +1,9 @@
-<?php include '../layout/header.php';
+<?php 
+session_start();
+if(!isset($_SESSION['username'])){
+    header("Location: login.php");
+}
+include '../layout/header.php';
 
 $result = "Your KMI will be here!";
 $color = "primary";

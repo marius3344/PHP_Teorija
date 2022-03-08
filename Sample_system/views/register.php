@@ -1,4 +1,6 @@
-<?php include '../layout/header.php' ?>
+<?php
+
+include '../layout/header.php' ?>
 
 <div class="container py-4">
     <div class="row justify-content-center">

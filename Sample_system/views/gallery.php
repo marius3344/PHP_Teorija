@@ -1,4 +1,8 @@
 <?php
+session_start();
+if(!isset($_SESSION['username'])){
+    header("Location: login.php");
+}
 $title1=$title2=$title3=$title4=$color= "";
 
 if ($_SERVER['REQUEST_METHOD'] == "POST") {

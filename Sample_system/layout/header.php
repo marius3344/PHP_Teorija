@@ -58,6 +58,9 @@
                     <li class="nav-item">
                         <a href="http://localhost/PHP_teorija/sample_system/views/register.php" class="nav-link">Register</a>
                     </li>
+                    <li class="nav-item">
+                        <a href="http://localhost/PHP_teorija/sample_system/scripts/logout.php" class="nav-link">Logout</a>
+                    </li>
                 </ul>
 
             </div>
