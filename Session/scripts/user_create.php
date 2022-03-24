@@ -38,8 +38,26 @@ if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
     array_push($_SESSION['reg_errors'], "Email format is invalid");
 }
 
+if($password==$conf_password){
+    $password = password_hash($password, PASSWORD_BCRYPT);
+} else {
+    array_push($_SESSION['reg_errors'], "Passwords do not match!");
+}
+
 if(!empty($_SESSION['reg_errors'])){
     header("Location: ../views/register.php");
 }
+
+
+
+try{
+    $sql = "INSERT INTO users (first_name, last_name, email, password) VALUES ('$first_name', '$last_name', '$email', '$password')";
+    $query = $conn->prepare($sql);
+    $query->execute();
+    header("Location: ../views/login.php");
+} catch (PDOException $e){
+    echo "Insert failed: ".$e->getMessage();
+}
+
 
 ?>
