@@ -46,6 +46,7 @@ if($password==$conf_password){
 
 if(!empty($_SESSION['reg_errors'])){
     header("Location: ../views/register.php");
+    die;
 }
 
 
