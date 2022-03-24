@@ -5,6 +5,7 @@ if(!isset($_SESSION['username'])){
 }
 require_once '../db_connection.php';
 
+$user = $_SESSION['userId'];
 if($_POST){
     try {
         $userid = $_POST['userid'];

@@ -25,6 +25,7 @@ if ($result){
     //tikriname slaptazodi
     if(password_verify($password, $dbPasswordHash)){
         $_SESSION['username'] = $result['first_name'];
+        $_SESSION['userId'] = $result['id'];
         //echo "Login successful";
         header("Location: ../views/users.php");
     } else {
