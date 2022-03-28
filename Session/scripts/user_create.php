@@ -11,9 +11,9 @@ if(!(isset($_POST['fname']) && isset($_POST['lname']) && isset($_POST['email']) 
     echo "Something went wrong, please contact system admin";
 }
 
-$first_name = $_POST['fname'];
-$last_name = $_POST['lname'];
-$email = $_POST['email'];
+$_SESSION['first_name'] = $first_name = $_POST['fname'];
+$_SESSION['last_name'] = $last_name = $_POST['lname'];
+$_SESSION['email'] = $email = $_POST['email'];
 $password = $_POST['password'];
 $conf_password = $_POST['confPassword'];
 
