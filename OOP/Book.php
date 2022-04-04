@@ -23,7 +23,7 @@ class Book
     }
 
     public function __destruct(){
-        echo $this->name;
+        //echo $this->name;
     }
 
 }
@@ -78,9 +78,40 @@ class Book3
     
 }
 
-$thirdBook = new Book3(789, 9.99);
+$thirdBook = new Book3("789", 9.99);
 //$thirdBook->price = 8.99;
 var_dump($thirdBook->price);
 var_dump($thirdBook->name);
+
+
+//////////INHERITANCE/////////////
+
+class ChildrensBook extends Book
+{
+    private $recommendedAge;
+
+    public function __construct($name, $price, $age){
+        
+        parent::__construct($name, $price);
+        $this->recommendedAge = $age;
+    }
+
+    // public function setRecAge($age){
+    //     $this->recommendedAge = $age;
+    //     return $this;
+    // }
+
+    public function getRecAge(){
+        return $this->recommendedAge;
+    }
+}
+
+$childrensBook = new ChildrensBook("Pepe Ilgakojine", 23.69, 8);
+
+//echo $childrensBook->getName();
+
+//$childrensBook->setRecAge(7);
+echo $childrensBook->getRecAge().' '.$childrensBook->getName().' '.$childrensBook->getPrice();
+
 
 ?>
