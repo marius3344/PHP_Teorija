@@ -2,6 +2,8 @@
 //declare(strict_types=1);
 class Book
 {
+    
+
     private $name;
     private $price;
 
@@ -9,6 +11,8 @@ class Book
     {
         $this->name = $knygosPavadinimas;
         $this->price = $knygosKaina;
+
+     
     }
 
  
@@ -27,7 +31,7 @@ class Book
     }
 
 }
-//$firstBook  = new Book("Harry Potter", 8.99);
+$firstBook  = new Book("Harry Potter", 8.99);
 
 //echo $firstBook->getPrice();
 
@@ -62,7 +66,7 @@ class Book2
 
 }
 
-$secondBook = new Book2("Ziedu valdovas", 5.99);
+//$secondBook = new Book2("Ziedu valdovas", 5.99);
 //echo $secondBook->getName();
 
 //typed properities
@@ -80,8 +84,8 @@ class Book3
 
 $thirdBook = new Book3("789", 9.99);
 //$thirdBook->price = 8.99;
-var_dump($thirdBook->price);
-var_dump($thirdBook->name);
+//var_dump($thirdBook->price);
+////var_dump($thirdBook->name);
 
 
 //////////INHERITANCE/////////////
@@ -111,7 +115,7 @@ $childrensBook = new ChildrensBook("Pepe Ilgakojine", 23.69, 8);
 //echo $childrensBook->getName();
 
 //$childrensBook->setRecAge(7);
-echo $childrensBook->getRecAge().' '.$childrensBook->getName().' '.$childrensBook->getPrice();
+//echo $childrensBook->getRecAge().' '.$childrensBook->getName().' '.$childrensBook->getPrice();
 
 
 ?>
